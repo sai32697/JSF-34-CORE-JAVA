@@ -1,0 +1,30 @@
+package practice;
+
+import java.util.Scanner;
+
+public class DoWhileFactorial {
+	public static void main(String[] args) {
+		
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter a number :- ");
+		if(obj.hasNextInt()) {
+			int number=obj.nextInt();
+			int i=1;
+			if(number >=0) {
+			int fact =1;
+			do {
+				fact=fact *i;
+				i++;
+			}while (i<=number);
+			System.out.println("Factorial is "+fact);
+			
+		}else {
+			System.out.println("Please enter positive values");
+		}}
+			else {
+			System.out.println("Only enter numbers ");
+		}
+		
+	}
+
+}
